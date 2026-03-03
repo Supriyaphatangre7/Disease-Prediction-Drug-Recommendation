@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: disease-ml-service
-    env: python
-    plan: free
-    buildCommand: pip install -r ml-service/req.txt
-    startCommand: cd ml-service && uvicorn app:app --host 0.0.0.0 --port 10000
-    pythonVersion: 3.10.13
